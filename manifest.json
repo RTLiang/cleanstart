@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Chrome-like Homepage",
+    "version": "1.0",
+    "description": "A Chrome default-like homepage replacement",
+    "chrome_url_overrides": {
+      "newtab": "index.html"
+    },
+    "icons": {
+      "128": "icon128.png"
+    },
+    "permissions": ["storage"],
+    "host_permissions": ["https://*.google.com/"]
+  }
