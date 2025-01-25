@@ -95,3 +95,21 @@ body {
 input::-webkit-contacts-auto-fill-button {
     display: none !important;
 }
+
+.valid-url {
+    color: #3e63d1 !important;
+    transition: color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  /* 强制搜索状态 */
+  .force-search {
+    box-shadow: 0 0 0 2px #fbbc04 !important;
+  }
+  
+  /* 暗黑模式适配 */
+  @media (prefers-color-scheme: dark) {
+    .valid-url {
+      color: #8ab4f8 !important;
+    }
+  }
