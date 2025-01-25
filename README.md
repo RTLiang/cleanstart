@@ -1,15 +1,18 @@
-# Chrome Homepage Replica Extension
-This Chrome extension faithfully replicates the core functionality of the Chrome homepage, featuring:
+# Clean Start Extension
 
-- Authentic Google logo display
-- Intelligent search bar with URL detection
-- Automatic dark mode adaptation
-- Internationalization (i18n) support
-- Smart URL navigation with search fallback
+**Author: Raydon Liang**
+This Chrome extension provides a clean and intelligent search experience, featuring:
 
+- Multi-search engine support (Google, Bing, Baidu, DuckDuckGo, Yandex)
+- Advanced URL detection with search fallback
+- System-aware dark/light mode adaptation
+- Internationalization (i18n) framework
+- Search engine selector in settings
+- Optimized interface for all supported search engines
 
-KNOWNISSUES
-- [] i18n for chaning search engine
-- [x] ddg logo darkmode
-- [] spaceholder i18n support
-- [x] baidu color is low saturation
+## KNOWN ISSUES
+- [] i18n for search engine selection
+- [] Search bar placeholder i18n support
+
+## FUTURE FEATURES
+- [] Customizable background image
