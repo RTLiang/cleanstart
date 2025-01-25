@@ -1,10 +1,10 @@
 ﻿{
-  "extName": {
-    "message": "类Chrome主页",
+"extName": {
+    "message": "纯净起始页",
     "description": "扩展名称"
   },
   "extDesc": {
-    "message": "仿Chrome默认主页的替代页面",
+    "message": "轻量级浏览器新标签页替代方案，提供无干扰的快速访问体验",
     "description": "扩展描述"
   },
   "searchPlaceholder": {

@@ -1,10 +1,10 @@
 ﻿{
-  "extName": {
-    "message": "類Chrome首頁",
+"extName": {
+    "message": "極簡啟程",
     "description": "擴展名稱"
   },
   "extDesc": {
-    "message": "仿Chrome預設首頁的替代頁面",
+    "message": "輕量化瀏覽器新分頁替代方案，提供零干擾的快速啟動體驗",
     "description": "擴展描述"
   },
   "searchPlaceholder": {

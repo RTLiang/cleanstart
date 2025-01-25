@@ -1,10 +1,10 @@
 ﻿{
   "extName": {
-    "message": "Chrome-like Homepage",
+    "message": "Clean Start",
     "description": "Extension name"
   },
   "extDesc": {
-    "message": "A Chrome default-like homepage replacement",
+    "message": "A lightweight browser new tab replacement delivering distraction-free quick access experience.",
     "description": "Extension description"
   },
   "searchPlaceholder": {
