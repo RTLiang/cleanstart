@@ -6,3 +6,10 @@ This Chrome extension faithfully replicates the core functionality of the Chrome
 - Automatic dark mode adaptation
 - Internationalization (i18n) support
 - Smart URL navigation with search fallback
+
+
+KNOWNISSUES
+- [] i18n for chaning search engine
+- [x] ddg logo darkmode
+- [] spaceholder i18n support
+- [x] baidu color is low saturation

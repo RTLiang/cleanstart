@@ -1,7 +1,24 @@
 // 配置部分
-const URL_SUFFIXES = ['.com', '.net', '.org', '.io', '.cn', '.gov', '.edu','.ai']; // 自定义后缀列表
+const URL_SUFFIXES = ['.com', '.net', '.org', '.io', '.cn', '.gov', '.edu', '.ai']; // 自定义后缀列表
 const DEFAULT_PROTOCOL = 'https://'; // 默认协议头
 const searchInput = document.getElementById('searchInput');
+
+const LOGO_PATHS = {
+    google: './logo/googlelogo.svg',
+    bing: './logo/binglogo.svg',
+    baidu: './logo/baidulogo.svg',
+    duckduckgo: './logo/ddglogo.svg',
+    yandex: './logo/yandexlogo.svg',
+};
+
+chrome.storage.sync.get(['searchEngine'], function (result) {
+    currentEngine = result.searchEngine || 'google';
+    document.getElementById('searchEngine').value = currentEngine;
+    document.querySelector('.logo').src = LOGO_PATHS[currentEngine]; // Update logo
+    document.getElementById('searchInput').placeholder = 
+    chrome.i18n.getMessage(`search${currentEngine.charAt(0).toUpperCase() + currentEngine.slice(1)}Placeholder`);
+});
+
 
 // 处理输入提交
 function handleInput(query, forceSearch = false) {
@@ -71,9 +88,42 @@ function navigateToUrl(url) {
 }
 
 // 实际搜索函数 
+const SEARCH_ENGINES = {
+    google: query => `https://www.google.com/search?q=${encodeURIComponent(query)}`,
+    bing: query => `https://www.bing.com/search?q=${encodeURIComponent(query)}`,
+    baidu: query => `https://www.baidu.com/s?wd=${encodeURIComponent(query)}`,
+    duckduckgo: query => `https://duckduckgo.com/?q=${encodeURIComponent(query)}`,
+    yandex: query => `https://yandex.com/search/?text=${encodeURIComponent(query)}`
+};
+
+let currentEngine = 'google';
+
+// Load saved settings
+chrome.storage.sync.get(['searchEngine'], function (result) {
+    currentEngine = result.searchEngine || 'google';
+    document.getElementById('searchEngine').value = currentEngine;
+});
+
 function performSearch(query) {
-    window.location.href = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+    const searchUrl = SEARCH_ENGINES[currentEngine](query);
+    window.location.href = searchUrl;
 }
+
+// Add settings handlers
+document.getElementById('settingsButton').addEventListener('click', () => {
+    const panel = document.getElementById('settingsPanel');
+    panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+});
+
+document.getElementById('saveSettings').addEventListener('click', () => {
+    currentEngine = document.getElementById('searchEngine').value;
+    chrome.storage.sync.set({ searchEngine: currentEngine }, () => {
+        document.getElementById('searchInput').placeholder = 
+    chrome.i18n.getMessage(`search${currentEngine.charAt(0).toUpperCase() + currentEngine.slice(1)}Placeholder`);
+        document.getElementById('settingsPanel').style.display = 'none';
+        document.querySelector('.logo').src = LOGO_PATHS[currentEngine]; // Update logo
+    });
+});
 
 // 事件监听
 document.getElementById('searchInput').addEventListener('keydown', (e) => {
@@ -100,7 +150,15 @@ document.getElementById('searchInput').style.cssText = `
     overflow: hidden;
 `;
 
-// Set placeholder text
-document.getElementById('searchInput').placeholder =
-    chrome.i18n.getMessage('searchPlaceholder');
 
+// Add this at the bottom of the file
+function initInternationalization() {
+    const elements = document.querySelectorAll('[data-i18n]');
+    elements.forEach(el => {
+        const msgKey = el.getAttribute('data-i18n');
+        el.textContent = chrome.i18n.getMessage(msgKey);
+    });
+}
+
+// Call this when DOM loads
+document.addEventListener('DOMContentLoaded', initInternationalization);

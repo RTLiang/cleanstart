@@ -7,8 +7,24 @@
     "message": "A lightweight browser new tab replacement delivering distraction-free quick access experience.",
     "description": "Extension description"
   },
-  "searchPlaceholder": {
+  "searchGooglePlaceholder": {
     "message": "Search Google or type a URL",
     "description": "Search input placeholder text"
+  },
+  "searchBingPlaceholder": {
+    "message": "Search Bing or type a URL",
+    "description": "Search input placeholder text"
+  },
+  "searchBaiduPlaceholder": {
+    "message": "Search Baidu or type a URL",
+    "description": "Search input placeholder text"
+},
+  "searchEngineLabel": {
+    "message": "Search Engine:",
+    "description": "Label for search engine selector"
+  },
+  "saveSettingsButton": {
+    "message": "Save",
+    "description": "Settings save button text"
   }
 }

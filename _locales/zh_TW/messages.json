@@ -1,5 +1,5 @@
 ﻿{
-"extName": {
+  "extName": {
     "message": "極簡啟程",
     "description": "擴展名稱"
   },
@@ -7,8 +7,24 @@
     "message": "輕量化瀏覽器新分頁替代方案，提供零干擾的快速啟動體驗",
     "description": "擴展描述"
   },
-  "searchPlaceholder": {
-    "message": "搜尋 Google 或輸入網址",
+  "searchGooglePlaceholder": {
+    "message": "Google 搜尋或輸入網址",
     "description": "搜尋框佔位符文字"
+  },
+  "searchBingPlaceholder": {
+    "message": "Bing 搜尋或輸入網址",
+    "description": "搜尋框佔位符文字"
+  },
+  "searchBaiduPlaceholder": {
+    "message": "百度搜尋或輸入網址",
+    "description": "搜尋框佔位符文字"
+  },
+  "searchEngineLabel": {
+    "message": "搜尋引擎：",
+    "description": "Label for search engine selector"
+  },
+  "saveSettingsButton": {
+    "message": "儲存設定",
+    "description": "Settings save button text"
   }
 }

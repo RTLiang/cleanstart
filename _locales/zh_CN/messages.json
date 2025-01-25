@@ -1,5 +1,5 @@
 ﻿{
-"extName": {
+  "extName": {
     "message": "纯净起始页",
     "description": "扩展名称"
   },
@@ -7,8 +7,24 @@
     "message": "轻量级浏览器新标签页替代方案，提供无干扰的快速访问体验",
     "description": "扩展描述"
   },
-  "searchPlaceholder": {
-    "message": "搜索 Google 或输入网址",
+  "searchGooglePlaceholder": {
+    "message": "Google 搜索或输入网址",
     "description": "搜索框占位符文本"
+  },
+  "searchBingPlaceholder": {
+    "message": "Bing 搜索或输入网址",
+    "description": "搜索框占位符文本"
+  },
+  "searchBaiduPlaceholder": {
+    "message": "百度搜索或输入网址",
+    "description": "搜索框占位符文本"
+},
+  "searchEngineLabel": {
+    "message": "搜索引擎：",
+    "description": "Label for search engine selector"
+  },
+  "saveSettingsButton": {
+    "message": "保存设置",
+    "description": "Settings save button text"
   }
 }

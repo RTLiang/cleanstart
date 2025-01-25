@@ -10,8 +10,21 @@
 
 <body>
     <div class="container">
-        <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="Google Logo"
-            class="logo">
+        <img src="./logo/googlelogo.svg" alt="Search Engine Logo" class="logo">
+        <div class="settings-icon" id="settingsButton">⚙</div>
+        <div class="settings-panel" id="settingsPanel">
+            <!-- <label>__MSG_searchEngineLabel__</label> -->
+            <label>Search Engine</label>
+            <select id="searchEngine">
+                <option value="google">Google</option>
+                <option value="bing">Bing</option>
+                <option value="baidu">Baidu</option>
+                <option value="duckduckgo">DuckDuckGo</option>
+                <option value="yandex">Yandex</option>
+            </select>
+            <!-- <button id="saveSettings">__MSG_saveSettings__</button> -->
+            <button id="saveSettings">Save</button>
+        </div>
         <div class="search-box">
             <div class="search-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
@@ -19,11 +32,29 @@
                         d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
                 </svg>
             </div>
-            <input type="text" autocomplete="off" class="search-input" id="searchInput" placeholder="__MSG_searchPlaceholder__">
+            <!-- <input type="text" autocomplete="off" class="search-input" id="searchInput"
+                placeholder="__MSG_searchPlaceholder__"> -->
+            <input type="text" autocomplete="off" class="search-input" id="searchInput" style="display: block; margin: 0 auto;">
+
+
             <div class="suggestions-container" id="suggestionsContainer"></div>
         </div>
     </div>
     <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
