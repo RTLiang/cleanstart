@@ -1,5 +1,13 @@
 # Clean Start Extension Changelog
 
+
+## Version 1.1.2
+### Release Date: 25 JAN 2025
+
+### Enhancements
+- Added French (fr) and Spanish (es) language support
+
+
 ## Version 1.1.1
 ### Release Date: 25 JAN 2025
 

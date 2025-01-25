@@ -1,0 +1,38 @@
+{
+    "extName": {
+        "message": "Démarrage Propre",
+        "description": "Nom de l'extension"
+    },
+    "extDesc": {
+        "message": "Un remplacement léger pour les nouveaux onglets, offrant une expérience d'accès rapide sans distraction",
+        "description": "Description de l'extension"
+    },
+    "searchGooglePlaceholder": {
+        "message": "Rechercher sur Google ou taper une URL",
+        "description": "Texte d'espace réservé pour la recherche"
+    },
+    "searchBingPlaceholder": {
+        "message": "Rechercher sur Bing ou taper une URL",
+        "description": "Texte d'espace réservé pour la recherche"
+    },
+    "searchBaiduPlaceholder": {
+        "message": "Rechercher sur Baidu ou taper une URL",
+        "description": "Texte d'espace réservé pour la recherche"
+    },
+    "searchDuckduckgoPlaceholder": {
+        "message": "Rechercher sur DuckDuckGo ou taper une URL",
+        "description": "Texte d'espace réservé pour la recherche"
+    },
+    "searchYandexPlaceholder": {
+        "message": "Rechercher sur Yandex ou taper une URL",
+        "description": "Texte d'espace réservé pour la recherche"
+    },
+    "searchEngineLabel": {
+        "message": "Moteur de recherche :",
+        "description": "Label pour le sélecteur de moteur de recherche"
+    },
+    "saveSettingsButton": {
+        "message": "Enregistrer",
+        "description": "Texte du bouton d'enregistrement des paramètres"
+    }
+}

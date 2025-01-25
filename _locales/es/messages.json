@@ -1,0 +1,38 @@
+{
+    "extName": {
+        "message": "Inicio Limpio",
+        "description": "Nombre de la extensión"
+    },
+    "extDesc": {
+        "message": "Un reemplazo ligero para las nuevas pestañas, ofreciendo una experiencia de acceso rápido sin distracciones",
+        "description": "Descripción de la extensión"
+    },
+    "searchGooglePlaceholder": {
+        "message": "Buscar en Google o escribir una URL",
+        "description": "Texto de marcador de posición para la búsqueda"
+    },
+    "searchBingPlaceholder": {
+        "message": "Buscar en Bing o escribir una URL",
+        "description": "Texto de marcador de posición para la búsqueda"
+    },
+    "searchBaiduPlaceholder": {
+        "message": "Buscar en Baidu o escribir una URL",
+        "description": "Texto de marcador de posición para la búsqueda"
+    },
+    "searchDuckduckgoPlaceholder": {
+        "message": "Buscar en DuckDuckGo o escribir una URL",
+        "description": "Texto de marcador de posición para la búsqueda"
+    },
+    "searchYandexPlaceholder": {
+        "message": "Buscar en Yandex o escribir una URL",
+        "description": "Texto de marcador de posición para la búsqueda"
+    },
+    "searchEngineLabel": {
+        "message": "Motor de búsqueda:",
+        "description": "Etiqueta para el selector de motor de búsqueda"
+    },
+    "saveSettingsButton": {
+        "message": "Guardar",
+        "description": "Texto del botón de guardar configuración"
+    }
+}

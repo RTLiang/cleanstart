@@ -18,6 +18,8 @@ This Chrome extension provides a clean and intelligent search experience, featur
 
 ## Supported Languages
 - English (en)
+- French (fr)
+- Spanish (es)
 - Simplified Chinese (zh_CN)
 - Traditional Chinese (zh_TW)
 
