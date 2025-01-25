@@ -1,0 +1,6 @@
+﻿{
+  "searchPlaceholder": {
+    "message": "Search Google or type a URL",
+    "description": "Search input placeholder text"
+  }
+}

@@ -3,6 +3,7 @@
     "name": "Chrome-like Homepage",
     "version": "1.0",
     "description": "A Chrome default-like homepage replacement",
+    "default_locale": "en",
     "chrome_url_overrides": {
       "newtab": "index.html"
     },
