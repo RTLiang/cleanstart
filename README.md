@@ -1,18 +1,8 @@
 # Chrome Homepage Replica Extension
+This Chrome extension faithfully replicates the core functionality of the Chrome homepage, featuring:
 
-This extension replicates the Chrome homepage experience, including:
-- Google logo
-- Search bar 
-- Auto Darkmode
-- i18n
-
-## Installation
-1. Download the extension files
-2. Open Chrome and go to `chrome://extensions/`
-3. Enable "Developer mode"
-4. Click "Load unpacked" and select the extension folder
-
-
-## Dependencies
-- Chrome browser
-- Internet connection
+- Authentic Google logo display
+- Intelligent search bar with URL detection
+- Automatic dark mode adaptation
+- Internationalization (i18n) support
+- Smart URL navigation with search fallback

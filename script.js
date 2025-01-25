@@ -1,5 +1,5 @@
 // 配置部分
-const URL_SUFFIXES = ['.com', '.net', '.org', '.io', '.cn', '.gov', '.edu']; // 自定义后缀列表
+const URL_SUFFIXES = ['.com', '.net', '.org', '.io', '.cn', '.gov', '.edu','.ai']; // 自定义后缀列表
 const DEFAULT_PROTOCOL = 'https://'; // 默认协议头
 const searchInput = document.getElementById('searchInput');
 
