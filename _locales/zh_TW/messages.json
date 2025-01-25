@@ -1,4 +1,12 @@
 ﻿{
+  "extName": {
+    "message": "類Chrome首頁",
+    "description": "擴展名稱"
+  },
+  "extDesc": {
+    "message": "仿Chrome預設首頁的替代頁面",
+    "description": "擴展描述"
+  },
   "searchPlaceholder": {
     "message": "搜尋 Google 或輸入網址",
     "description": "搜尋框佔位符文字"

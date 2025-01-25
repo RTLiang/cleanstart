@@ -35,8 +35,3 @@ document.getElementById('searchInput').style.cssText = `
 document.getElementById('searchInput').placeholder = 
   chrome.i18n.getMessage('searchPlaceholder');
 
-// Listen for language changes
-chrome.i18n.onMessageChanged.addListener(() => {
-  document.getElementById('searchInput').placeholder = 
-    chrome.i18n.getMessage('searchPlaceholder');
-});

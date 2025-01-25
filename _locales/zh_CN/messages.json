@@ -1,4 +1,12 @@
 ﻿{
+  "extName": {
+    "message": "类Chrome主页",
+    "description": "扩展名称"
+  },
+  "extDesc": {
+    "message": "仿Chrome默认主页的替代页面",
+    "description": "扩展描述"
+  },
   "searchPlaceholder": {
     "message": "搜索 Google 或输入网址",
     "description": "搜索框占位符文本"

@@ -1,4 +1,12 @@
 ﻿{
+  "extName": {
+    "message": "Chrome-like Homepage",
+    "description": "Extension name"
+  },
+  "extDesc": {
+    "message": "A Chrome default-like homepage replacement",
+    "description": "Extension description"
+  },
   "searchPlaceholder": {
     "message": "Search Google or type a URL",
     "description": "Search input placeholder text"
