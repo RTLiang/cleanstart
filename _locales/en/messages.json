@@ -18,7 +18,15 @@
   "searchBaiduPlaceholder": {
     "message": "Search Baidu or type a URL",
     "description": "Search input placeholder text"
-},
+  },
+  "searchDuckduckgoPlaceholder": {
+    "message": "Search DuckDuckGo or type a URL",
+    "description": "Search input placeholder text"
+  },
+  "searchYandexPlaceholder": {
+    "message": "Search Yandex or type a URL",
+    "description": "Search input placeholder text"
+  },
   "searchEngineLabel": {
     "message": "Search Engine:",
     "description": "Label for search engine selector"

@@ -18,7 +18,15 @@
   "searchBaiduPlaceholder": {
     "message": "百度搜索或输入网址",
     "description": "搜索框占位符文本"
-},
+  },
+  "searchDuckduckgoPlaceholder": {
+    "message": "DuckDuckGo 搜索或输入网址",
+    "description": "搜索框占位符文本"
+  },
+  "searchYandexPlaceholder": {
+    "message": "Yandex 搜索或输入网址",
+    "description": "搜索框占位符文本"
+  },
   "searchEngineLabel": {
     "message": "搜索引擎：",
     "description": "Label for search engine selector"

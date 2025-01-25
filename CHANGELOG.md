@@ -1,5 +1,18 @@
 # Clean Start Extension Changelog
 
+## Version 1.1.1
+### Release Date: 25 JAN 2025
+
+### Bug Fixes
+- Resolved search bar placeholder text issue with i18n implementation
+- Added localized placeholder text for all supported languages (English, Simplified Chinese, Traditional Chinese)
+
+### Enhancements
+- Search bar now displays appropriate placeholder text based on selected search engine and language
+### Security Improvements
+- Removed unnecessary permissions to enhance user privacy and security
+
+
 ## Version 1.1
 ### Release Date: 25 JAN 2025
 
@@ -14,7 +27,8 @@
 - Improved search bar responsiveness and accessibility
 
 ### Temporary Changes
-- Removed search bar placeholder text (pending i18n implementation)
+- *(fixed in Version 1.1.1)* Removed search bar placeholder text (pending i18n implementation)  
+
 
 ## Version 1.0
 ### Release Date: 25 JAN 2025

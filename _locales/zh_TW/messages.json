@@ -19,6 +19,14 @@
     "message": "百度搜尋或輸入網址",
     "description": "搜尋框佔位符文字"
   },
+  "searchDuckduckgoPlaceholder": {
+    "message": "DuckDuckGo 搜尋或輸入網址",
+    "description": "搜尋框佔位符文字"
+  },
+  "searchYandexPlaceholder": {
+    "message": "Yandex 搜尋或輸入網址",
+    "description": "搜尋框佔位符文字"
+  },
   "searchEngineLabel": {
     "message": "搜尋引擎：",
     "description": "Label for search engine selector"

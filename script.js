@@ -15,8 +15,10 @@ chrome.storage.sync.get(['searchEngine'], function (result) {
     currentEngine = result.searchEngine || 'google';
     document.getElementById('searchEngine').value = currentEngine;
     document.querySelector('.logo').src = LOGO_PATHS[currentEngine]; // Update logo
-    document.getElementById('searchInput').placeholder = 
-    chrome.i18n.getMessage(`search${currentEngine.charAt(0).toUpperCase() + currentEngine.slice(1)}Placeholder`);
+    document.getElementById('searchInput').placeholder =
+        chrome.i18n.getMessage(`search${currentEngine.charAt(0).toUpperCase() + currentEngine.slice(1)}Placeholder`);
+    console.log(`search${currentEngine.charAt(0).toUpperCase() + currentEngine.slice(1)}Placeholder`);
+
 });
 
 
@@ -118,8 +120,8 @@ document.getElementById('settingsButton').addEventListener('click', () => {
 document.getElementById('saveSettings').addEventListener('click', () => {
     currentEngine = document.getElementById('searchEngine').value;
     chrome.storage.sync.set({ searchEngine: currentEngine }, () => {
-        document.getElementById('searchInput').placeholder = 
-    chrome.i18n.getMessage(`search${currentEngine.charAt(0).toUpperCase() + currentEngine.slice(1)}Placeholder`);
+        document.getElementById('searchInput').placeholder =
+            chrome.i18n.getMessage(`search${currentEngine.charAt(0).toUpperCase() + currentEngine.slice(1)}Placeholder`);
         document.getElementById('settingsPanel').style.display = 'none';
         document.querySelector('.logo').src = LOGO_PATHS[currentEngine]; // Update logo
     });
