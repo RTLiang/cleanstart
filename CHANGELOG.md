@@ -1,6 +1,13 @@
 # Clean Start Extension Changelog
 
 
+## Version 1.1.3
+### Release Date: 26 JAN 2025
+
+### New Features
+- Implemented intuitive search bar auto-focus functionality when clicking anywhere in the blank area of the page
+- Added automatic paste handling that focuses search bar and inserts pasted content
+
 ## Version 1.1.2
 ### Release Date: 25 JAN 2025
 

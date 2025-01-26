@@ -163,4 +163,31 @@ function initInternationalization() {
 }
 
 // Call this when DOM loads
-document.addEventListener('DOMContentLoaded', initInternationalization);
+document.addEventListener('DOMContentLoaded', () => {
+    initInternationalization();
+    searchInput.focus();  // Add this line to focus on the search bar
+    
+});
+document.addEventListener('keydown', (e) => {
+    // Check if the key is a printable character and searchInput is not focused
+    if (e.key.length === 1 && !e.ctrlKey && !e.metaKey && document.activeElement !== searchInput) {
+        searchInput.focus();
+    }
+});
+
+document.addEventListener('paste', (e) => {
+    // If the paste is not already targeting the search bar
+    if (document.activeElement !== searchInput) {
+        // Focus on the search bar
+        searchInput.focus();
+        
+        // Get the pasted text
+        const pastedText = (e.clipboardData || window.clipboardData).getData('text');
+        
+        // Insert the pasted text into the search bar
+        searchInput.value = pastedText;
+        
+        // Prevent default paste behavior
+        e.preventDefault();
+    }
+});

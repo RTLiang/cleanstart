@@ -3,14 +3,13 @@
 **Author: Raydon Liang**
 This Chrome extension provides a clean and intelligent search experience, featuring:
 
-- Multi-search engine support (Google, Bing, Baidu, DuckDuckGo, Yandex)
-- Advanced URL detection with search fallback
-- System-aware dark/light mode adaptation
-- Internationalization (i18n) framework
-- Search engine selector in settings
-- Optimized interface for all supported search engines
-- Search bar placeholder i18n support
-
+- Intuitive search bar auto-focus when clicking anywhere on the page
+- Automatic paste handling that focuses search bar and inserts content
+- Multi-language support (English, French, Spanish, Simplified Chinese, Traditional Chinese)
+- Intelligent URL handling with automatic search fallback
+- Search engine selector in settings panel
+- Advanced URL detection in search bar
+- Optimized dark mode for all search engine logos and interfaces
 
 ## KNOWN ISSUES
 - i18n for search engine selection
