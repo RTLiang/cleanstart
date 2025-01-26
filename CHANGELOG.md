@@ -1,10 +1,15 @@
 # Clean Start Extension Changelog
 
 ## Version 1.1.4
+### Release Date: 26 JAN 2025
+
+### New Features
+- Added ChatGPT as a new search engine option
 
 ### Bug Fixes
 - Fixed search engine selection not being properly localized in settings panel
 - Improved search bar alignment and visual centering through CSS flexbox adjustments
+- Fixed issue with Chinese keyboard input where first key press was ignored during Pinyin input
 
 
 ## Version 1.1.3
@@ -30,6 +35,7 @@
 
 ### Enhancements
 - Search bar now displays appropriate placeholder text based on selected search engine and language
+
 ### Security Improvements
 - Removed unnecessary permissions to enhance user privacy and security
 

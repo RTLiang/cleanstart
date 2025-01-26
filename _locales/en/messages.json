@@ -15,12 +15,16 @@
     "message": "Search Bing or type a URL",
     "description": "Search input placeholder text"
   },
-  "searchBaiduPlaceholder": {
-    "message": "Search Baidu or type a URL",
-    "description": "Search input placeholder text"
-  },
   "searchPerplexityPlaceholder": {
     "message": "Search Perplexity or type a URL",
+    "description": "Search input placeholder text"
+  },
+  "searchChatgptPlaceholder": {
+    "message": "Search ChatGPT or type a URL",
+    "description": "Search input placeholder text"
+  },
+  "searchBaiduPlaceholder": {
+    "message": "Search Baidu or type a URL",
     "description": "Search input placeholder text"
   },
   "searchDuckduckgoPlaceholder": {

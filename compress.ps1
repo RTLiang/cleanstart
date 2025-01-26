@@ -12,7 +12,7 @@ try {
     Get-ChildItem -Path . -Recurse | Where-Object {
         $fullPath = $_.FullName
         -not $fullPath.Contains("\.git") -and
-        -not $fullPath.Contains("\assets") -and
+        -not $fullPath.Contains("\docs") -and
         -not $fullPath.Contains("\TempPublish") -and
         $_.Name -notin @("changelog.md", "readme.md", "compress.ps1",".gitignore")
     } | ForEach-Object {

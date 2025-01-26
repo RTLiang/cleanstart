@@ -6,8 +6,9 @@ const searchInput = document.getElementById('searchInput');
 const LOGO_PATHS = {
     google: './logo/googlelogo.svg',
     bing: './logo/binglogo.svg',
-    baidu: './logo/baidulogo.svg',
     perplexity: './logo/pplxlogo.svg',
+    chatgpt: './logo/chatgptlogo.svg',
+    baidu: './logo/baidulogo.svg',
     duckduckgo: './logo/ddglogo.svg',
     yandex: './logo/yandexlogo.svg',
 };
@@ -95,6 +96,7 @@ const SEARCH_ENGINES = {
     google: query => `https://www.google.com/search?q=${encodeURIComponent(query)}`,
     bing: query => `https://www.bing.com/search?q=${encodeURIComponent(query)}`,
     perplexity: query => `https://www.perplexity.ai/search?q=${encodeURIComponent(query)}`,
+    chatgpt: query => `https://chatgpt.com?q=${encodeURIComponent(query)}`,
     baidu: query => `https://www.baidu.com/s?wd=${encodeURIComponent(query)}`,
     duckduckgo: query => `https://duckduckgo.com/?q=${encodeURIComponent(query)}`,
     yandex: query => `https://yandex.com/search/?text=${encodeURIComponent(query)}`
@@ -137,6 +139,23 @@ document.getElementById('searchInput').addEventListener('keydown', (e) => {
         handleInput(e.target.value, forceSearch);
     }
 });
+
+document.addEventListener('click', (e) => {
+    const searchEngineSelect = document.getElementById('searchEngine');
+    const saveButton = document.getElementById('saveSettings');
+    
+    // Check if the click is not on the search input, search engine select, or save button
+    if (!searchInput.contains(e.target) && 
+        !searchEngineSelect.contains(e.target) && 
+        !saveButton.contains(e.target)) {
+        // Focus on the search bar only if IME is not composing
+        if (!searchInput.isComposing) {
+            searchInput.focus();
+        }
+    }
+});
+
+
 // Make sure this is your HTML structure:
 // <input type="text" class="search-input" id="searchInput" placeholder="Search...">
 

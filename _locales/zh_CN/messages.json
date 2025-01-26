@@ -15,6 +15,14 @@
     "message": "Bing 搜索或输入网址",
     "description": "搜索框占位符文本"
   },
+  "searchPerplexityPlaceholder": {
+    "message": "Perplexity 搜索或输入网址",
+    "description": "搜索框占位符文本"
+  },
+  "searchChatgptPlaceholder": {
+    "message": "ChatGPT 搜索或输入网址",
+    "description": "搜索框占位符文本"
+  },
   "searchBaiduPlaceholder": {
     "message": "百度搜索或输入网址",
     "description": "搜索框占位符文本"

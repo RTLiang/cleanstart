@@ -15,6 +15,14 @@
         "message": "Buscar en Bing o escribir una URL",
         "description": "Texto de marcador de posición para la búsqueda"
     },
+    "searchPerplexityPlaceholder": {
+        "message": "Buscar en Perplexity o escribir una URL",
+        "description": "Texto de marcador de posición para la búsqueda"
+    },
+    "searchChatgptPlaceholder": {
+        "message": "Buscar en ChatGPT o escribir una URL",
+        "description": "Texto de marcador de posición para la búsqueda"
+    },
     "searchBaiduPlaceholder": {
         "message": "Buscar en Baidu o escribir una URL",
         "description": "Texto de marcador de posición para la búsqueda"

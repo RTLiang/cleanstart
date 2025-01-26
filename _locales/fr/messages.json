@@ -15,6 +15,14 @@
         "message": "Rechercher sur Bing ou taper une URL",
         "description": "Texte d'espace réservé pour la recherche"
     },
+    "searchPerplexityPlaceholder": {
+        "message": "Rechercher sur Perplexity ou taper une URL",
+        "description": "Texte d'espace réservé pour la recherche"
+    },
+    "searchChatgptPlaceholder": {
+        "message": "Rechercher sur ChatGPT ou taper une URL",
+        "description": "Texte d'espace réservé pour la recherche"
+    },
     "searchBaiduPlaceholder": {
         "message": "Rechercher sur Baidu ou taper une URL",
         "description": "Texte d'espace réservé pour la recherche"

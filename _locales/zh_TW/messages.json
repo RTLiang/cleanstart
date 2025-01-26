@@ -15,6 +15,14 @@
     "message": "Bing 搜尋或輸入網址",
     "description": "搜尋框佔位符文字"
   },
+  "searchPerplexityPlaceholder": {
+    "message": "Perplexity 搜尋或輸入網址",
+    "description": "搜尋框佔位符文字"
+  },
+  "searchChatgptPlaceholder": {
+    "message": "ChatGPT 搜尋或輸入網址",
+    "description": "搜尋框佔位符文字"
+  },
   "searchBaiduPlaceholder": {
     "message": "百度搜尋或輸入網址",
     "description": "搜尋框佔位符文字"
