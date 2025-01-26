@@ -32,7 +32,7 @@
     "description": "Search input placeholder text"
   },
   "searchEngineLabel": {
-    "message": "Search Engine:",
+    "message": "Search Engine",
     "description": "Label for search engine selector"
   },
   "saveSettingsButton": {

@@ -28,7 +28,7 @@
     "description": "搜尋框佔位符文字"
   },
   "searchEngineLabel": {
-    "message": "搜尋引擎：",
+    "message": "搜尋引擎",
     "description": "Label for search engine selector"
   },
   "saveSettingsButton": {

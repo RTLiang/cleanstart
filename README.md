@@ -12,8 +12,7 @@ This Chrome extension provides a clean and intelligent search experience, featur
 - Optimized dark mode for all search engine logos and interfaces
 
 ## KNOWN ISSUES
-- i18n for search engine selection
-- Search bar alignment needs improvement for better visual centering
+
 
 ## Supported Languages
 - English (en)

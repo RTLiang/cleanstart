@@ -28,7 +28,7 @@
         "description": "Texte d'espace réservé pour la recherche"
     },
     "searchEngineLabel": {
-        "message": "Moteur de recherche :",
+        "message": "Moteur de recherche",
         "description": "Label pour le sélecteur de moteur de recherche"
     },
     "saveSettingsButton": {

@@ -13,18 +13,17 @@
         <img src="./logo/googlelogo.svg" alt="Search Engine Logo" class="logo">
         <div class="settings-icon" id="settingsButton">⚙</div>
         <div class="settings-panel" id="settingsPanel">
-            <!-- <label>__MSG_searchEngineLabel__</label> -->
-            <label>Search Engine</label>
+            <label data-i18n="searchEngineLabel"></label>
+            <!-- <label>Search Engine</label> -->
             <select id="searchEngine">
                 <option value="google">Google</option>
                 <option value="bing">Bing</option>
                 <option value="baidu">Baidu</option>
-                <!-- <option value="perplexity">Perplexity</option> -->
                 <option value="duckduckgo">DuckDuckGo</option>
                 <option value="yandex">Yandex</option>
             </select>
-            <!-- <button id="saveSettings">__MSG_saveSettings__</button> -->
-            <button id="saveSettings">Save</button>
+            <button id="saveSettings" data-i18n="saveSettingsButton"></button>
+
         </div>
         <div class="search-box">
             <div class="search-icon">
@@ -35,10 +34,10 @@
             </div>
             <!-- <input type="text" autocomplete="off" class="search-input" id="searchInput"
                 placeholder="__MSG_searchPlaceholder__"> -->
-            <input type="text" autocomplete="off" class="search-input" id="searchInput" style="display: block; margin: 0 auto;">
+                <input type="text" autocomplete="off" class="search-input" id="searchInput">
 
 
-            <div class="suggestions-container" id="suggestionsContainer"></div>
+            <!-- <div class="suggestions-container" id="suggestionsContainer"></div> -->
         </div>
     </div>
     <script src="script.js"></script>

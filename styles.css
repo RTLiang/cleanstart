@@ -15,22 +15,34 @@ body {
 .logo {
     width: 272px;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .search-box {
-    position: relative;
-    width: 582px;
+    width: 640px;
     margin: 0 auto;
+    position: relative;
+    /* Add these 2 lines */
+    display: flex;
+    justify-content: center;
 }
 
 .search-icon {
+    position: absolute;
+    left: 16px; /* Keep this */
+    /* Remove margin: 0 auto from input's inline style */
     position: absolute;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
     height: 24px;
     width: 24px;
-    z-index: 1;
+    /* Add these */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .search-input {
@@ -174,4 +186,3 @@ input::-webkit-contacts-auto-fill-button {
         margin-right: 10px;
     }
 }
-    

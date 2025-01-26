@@ -28,7 +28,7 @@
         "description": "Texto de marcador de posición para la búsqueda"
     },
     "searchEngineLabel": {
-        "message": "Motor de búsqueda:",
+        "message": "Motor de búsqueda",
         "description": "Etiqueta para el selector de motor de búsqueda"
     },
     "saveSettingsButton": {

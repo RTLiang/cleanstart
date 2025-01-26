@@ -1,5 +1,11 @@
 # Clean Start Extension Changelog
 
+## Version 1.1.4
+
+### Bug Fixes
+- Fixed search engine selection not being properly localized in settings panel
+- Improved search bar alignment and visual centering through CSS flexbox adjustments
+
 
 ## Version 1.1.3
 ### Release Date: 26 JAN 2025

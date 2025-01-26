@@ -28,7 +28,7 @@
     "description": "搜索框占位符文本"
   },
   "searchEngineLabel": {
-    "message": "搜索引擎：",
+    "message": "搜索引擎",
     "description": "Label for search engine selector"
   },
   "saveSettingsButton": {
