@@ -19,6 +19,10 @@
     "message": "Search Baidu or type a URL",
     "description": "Search input placeholder text"
   },
+  "searchPerplexityPlaceholder": {
+    "message": "Search Perplexity or type a URL",
+    "description": "Search input placeholder text"
+  },
   "searchDuckduckgoPlaceholder": {
     "message": "Search DuckDuckGo or type a URL",
     "description": "Search input placeholder text"

@@ -7,6 +7,7 @@ const LOGO_PATHS = {
     google: './logo/googlelogo.svg',
     bing: './logo/binglogo.svg',
     baidu: './logo/baidulogo.svg',
+    perplexity: './logo/pplxlogo.svg',
     duckduckgo: './logo/ddglogo.svg',
     yandex: './logo/yandexlogo.svg',
 };
@@ -93,6 +94,7 @@ function navigateToUrl(url) {
 const SEARCH_ENGINES = {
     google: query => `https://www.google.com/search?q=${encodeURIComponent(query)}`,
     bing: query => `https://www.bing.com/search?q=${encodeURIComponent(query)}`,
+    perplexity: query => `https://www.perplexity.ai/search?q=${encodeURIComponent(query)}`,
     baidu: query => `https://www.baidu.com/s?wd=${encodeURIComponent(query)}`,
     duckduckgo: query => `https://duckduckgo.com/?q=${encodeURIComponent(query)}`,
     yandex: query => `https://yandex.com/search/?text=${encodeURIComponent(query)}`
