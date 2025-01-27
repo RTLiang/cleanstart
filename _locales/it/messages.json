@@ -1,0 +1,46 @@
+{
+  "extName": {
+    "message": "Clean Start",
+    "description": "Extension name"
+  },
+  "extDesc": {
+    "message": "Un sostituto leggero per la nuova scheda del browser che offre un'esperienza di accesso rapido e senza distrazioni.",
+    "description": "Extension description"
+  },
+  "searchGooglePlaceholder": {
+    "message": "Cerca su Google o digita un URL",
+    "description": "Search input placeholder text"
+  },
+  "searchBingPlaceholder": {
+    "message": "Cerca su Bing o digita un URL",
+    "description": "Search input placeholder text"
+  },
+  "searchPerplexityPlaceholder": {
+    "message": "Cerca su Perplexity o digita un URL",
+    "description": "Search input placeholder text"
+  },
+  "searchChatgptPlaceholder": {
+    "message": "Cerca su ChatGPT o digita un URL",
+    "description": "Search input placeholder text"
+  },
+  "searchBaiduPlaceholder": {
+    "message": "Cerca su Baidu o digita un URL",
+    "description": "Search input placeholder text"
+  },
+  "searchDuckduckgoPlaceholder": {
+    "message": "Cerca su DuckDuckGo o digita un URL",
+    "description": "Search input placeholder text"
+  },
+  "searchYandexPlaceholder": {
+    "message": "Cerca su Yandex o digita un URL",
+    "description": "Search input placeholder text"
+  },
+  "searchEngineLabel": {
+    "message": "Motore di ricerca",
+    "description": "Label for search engine selector"
+  },
+  "saveSettingsButton": {
+    "message": "Salva",
+    "description": "Settings save button text"
+  }
+}

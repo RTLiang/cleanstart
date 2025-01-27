@@ -1,0 +1,46 @@
+{
+  "extName": {
+    "message": "클린 스타트",
+    "description": "Extension name"
+  },
+  "extDesc": {
+    "message": "가볍고 산만하지 않은 빠른 액세스 경험을 제공하는 브라우저 새 탭 대체 기능입니다.",
+    "description": "Extension description"
+  },
+  "searchGooglePlaceholder": {
+    "message": "Google 검색 또는 URL을 입력하세요.",
+    "description": "Search input placeholder text"
+  },
+  "searchBingPlaceholder": {
+    "message": "Bing 검색 또는 URL을 입력하세요.",
+    "description": "Search input placeholder text"
+  },
+  "searchPerplexityPlaceholder": {
+    "message": "Perplexity 검색 또는 URL을 입력하세요.",
+    "description": "Search input placeholder text"
+  },
+  "searchChatgptPlaceholder": {
+    "message": "ChatGPT 검색 또는 URL을 입력하세요.",
+    "description": "Search input placeholder text"
+  },
+  "searchBaiduPlaceholder": {
+    "message": "Baidu 검색 또는 URL을 입력하세요.",
+    "description": "Search input placeholder text"
+  },
+  "searchDuckduckgoPlaceholder": {
+    "message": "DuckDuckGo 검색 또는 URL을 입력하세요.",
+    "description": "Search input placeholder text"
+  },
+  "searchYandexPlaceholder": {
+    "message": "Yandex 검색 또는 URL을 입력하세요.",
+    "description": "Search input placeholder text"
+  },
+  "searchEngineLabel": {
+    "message": "검색 엔진",
+    "description": "Label for search engine selector"
+  },
+  "saveSettingsButton": {
+    "message": "저장",
+    "description": "Settings save button text"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "extName": {
+    "message": "Neustart",
+    "description": "Extension name"
+  },
+  "extDesc": {
+    "message": "Eine schlanke Browser-Registerkarten-Ersetzung, die ein ablenkungsfreies Schnellerlebnis bietet.",
+    "description": "Extension description"
+  },
+  "searchGooglePlaceholder": {
+    "message": "Google suchen oder URL eingeben",
+    "description": "Search input placeholder text"
+  },
+  "searchBingPlaceholder": {
+    "message": "Bing suchen oder URL eingeben",
+    "description": "Search input placeholder text"
+  },
+  "searchPerplexityPlaceholder": {
+    "message": "Perplexity suchen oder URL eingeben",
+    "description": "Search input placeholder text"
+  },
+  "searchChatgptPlaceholder": {
+    "message": "ChatGPT suchen oder URL eingeben",
+    "description": "Search input placeholder text"
+  },
+  "searchBaiduPlaceholder": {
+    "message": "Baidu suchen oder URL eingeben",
+    "description": "Search input placeholder text"
+  },
+  "searchDuckduckgoPlaceholder": {
+    "message": "DuckDuckGo suchen oder URL eingeben",
+    "description": "Search input placeholder text"
+  },
+  "searchYandexPlaceholder": {
+    "message": "Yandex suchen oder URL eingeben",
+    "description": "Search input placeholder text"
+  },
+  "searchEngineLabel": {
+    "message": "Suchmaschine",
+    "description": "Label for search engine selector"
+  },
+  "saveSettingsButton": {
+    "message": "Speichern",
+    "description": "Settings save button text"
+  }
+}

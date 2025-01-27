@@ -20,6 +20,11 @@ This Chrome extension provides a clean and intelligent search experience, featur
 - Spanish (es)
 - Simplified Chinese (zh_CN)
 - Traditional Chinese (zh_TW)
+- Japanese (ja)
+- Korean (ko)
+- Russian (ru)
+- German (de)
+- Italian (it)
 
 
 ## FUTURE FEATURES

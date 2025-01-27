@@ -1,0 +1,46 @@
+{
+  "extName": {
+    "message": "クリーンスタート",
+    "description": "Extension name"
+  },
+  "extDesc": {
+    "message": "軽量ブラウザの新しいタブ置換。気を散らすことのないクイックアクセス体験を提供します。",
+    "description": "Extension description"
+  },
+  "searchGooglePlaceholder": {
+    "message": "Google検索またはURLを入力",
+    "description": "Search input placeholder text"
+  },
+  "searchBingPlaceholder": {
+    "message": "Bing検索またはURLを入力",
+    "description": "Search input placeholder text"
+  },
+  "searchPerplexityPlaceholder": {
+    "message": "Perplexity検索またはURLを入力",
+    "description": "Search input placeholder text"
+  },
+  "searchChatgptPlaceholder": {
+    "message": "ChatGPT検索またはURLを入力",
+    "description": "Search input placeholder text"
+  },
+  "searchBaiduPlaceholder": {
+    "message": "Baidu検索またはURLを入力",
+    "description": "Search input placeholder text"
+  },
+  "searchDuckduckgoPlaceholder": {
+    "message": "DuckDuckGo検索またはURLを入力",
+    "description": "Search input placeholder text"
+  },
+  "searchYandexPlaceholder": {
+    "message": "Yandex検索またはURLを入力",
+    "description": "Search input placeholder text"
+  },
+  "searchEngineLabel": {
+    "message": "検索エンジン",
+    "description": "Label for search engine selector"
+  },
+  "saveSettingsButton": {
+    "message": "保存",
+    "description": "Settings save button text"
+  }
+}

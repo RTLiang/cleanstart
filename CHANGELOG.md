@@ -1,5 +1,12 @@
 # Clean Start Extension Changelog
 
+## Version 1.1.5
+### Release Date: 27 JAN 2025
+
+### New Features
+- Added Japanese (ja), Korean (ko), Russian (ru), German (de), and Italian (it) language support
+
+
 ## Version 1.1.4
 ### Release Date: 26 JAN 2025
 
@@ -65,6 +72,3 @@
 - System-aware dark/light mode detection
 - Basic search functionality with instant results
 - Multi-language support through i18n framework
-
-
-

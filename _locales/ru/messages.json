@@ -1,0 +1,46 @@
+{
+  "extName": {
+    "message": "Чистый старт",
+    "description": "Extension name"
+  },
+  "extDesc": {
+    "message": "Легкая замена новой вкладки браузера, обеспечивающая быстрый и удобный доступ без отвлекающих факторов.",
+    "description": "Extension description"
+  },
+  "searchGooglePlaceholder": {
+    "message": "Поиск в Google или ввод URL-адреса",
+    "description": "Search input placeholder text"
+  },
+  "searchBingPlaceholder": {
+    "message": "Поиск в Bing или ввод URL-адреса",
+    "description": "Search input placeholder text"
+  },
+  "searchPerplexityPlaceholder": {
+    "message": "Поиск в Perplexity или ввод URL-адреса",
+    "description": "Search input placeholder text"
+  },
+  "searchChatgptPlaceholder": {
+    "message": "Поиск в ChatGPT или ввод URL-адреса",
+    "description": "Search input placeholder text"
+  },
+  "searchBaiduPlaceholder": {
+    "message": "Поиск в Baidu или ввод URL-адреса",
+    "description": "Search input placeholder text"
+  },
+  "searchDuckduckgoPlaceholder": {
+    "message": "Поиск в DuckDuckGo или ввод URL-адреса",
+    "description": "Search input placeholder text"
+  },
+  "searchYandexPlaceholder": {
+    "message": "Поиск в Yandex или ввод URL-адреса",
+    "description": "Search input placeholder text"
+  },
+  "searchEngineLabel": {
+    "message": "Поисковая система",
+    "description": "Label for search engine selector"
+  },
+  "saveSettingsButton": {
+    "message": "Сохранить",
+    "description": "Settings save button text"
+  }
+}
