@@ -1,7 +1,7 @@
 # Clean Start Extension Changelog
 
 ## Version 1.2
-### Release Date: 28 JAN 2025
+### Release Date: 27 JAN 2025
 
 ### New Features
 - Implemented background image upload and reset functionality
