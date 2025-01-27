@@ -3,6 +3,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-image: url('img/custom-background.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ensure body takes full viewport height */
 }
 
 .container {
@@ -88,12 +93,14 @@ input::-webkit-contacts-auto-fill-button {
 .settings-panel select,
 .settings-panel button {
     margin-top: 10px;
+    margin-bottom: 10px; /* Added margin-bottom */
     padding: 8px;
 }
 
 .settings-panel label {
     display: block;
     margin-bottom: 8px;
+    font-size: 16px; /* Increased font size */
 }
 
 .settings-panel select {

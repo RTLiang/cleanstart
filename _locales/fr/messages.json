@@ -42,5 +42,13 @@
     "saveSettingsButton": {
         "message": "Enregistrer",
         "description": "Texte du bouton d'enregistrement des paramètres"
+    },
+    "backgroundImageLabel": {
+        "message": "Image de Fond",
+        "description": "Libellé pour le téléchargement de l'image de fond"
+    },
+    "resetBackgroundButton": {
+        "message": "Réinitialiser l'arrière-plan",
+        "description": "Bouton pour réinitialiser l'arrière-plan"
     }
 }

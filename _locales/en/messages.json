@@ -42,5 +42,13 @@
   "saveSettingsButton": {
     "message": "Save",
     "description": "Settings save button text"
+  },
+  "backgroundImageLabel": {
+    "message": "Background Image",
+    "description": "Label for background image upload"
+  },
+  "resetBackgroundButton": {
+    "message": "Reset Background",
+    "description": "Button to reset background"
   }
 }

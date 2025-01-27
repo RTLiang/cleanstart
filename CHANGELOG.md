@@ -1,5 +1,18 @@
 # Clean Start Extension Changelog
 
+## Version 1.2
+### Release Date: 28 JAN 2025
+
+### New Features
+- Implemented background image upload and reset functionality
+- Added localized labels for background image settings
+
+### Technical Updates
+- Updated manifest to include unlimited storage permission
+- Added event listeners for background image handling in script.js
+- Updated localization files with new background image strings
+
+
 ## Version 1.1.5
 ### Release Date: 27 JAN 2025
 

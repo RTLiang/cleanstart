@@ -1,4 +1,4 @@
-﻿{
+{
   "extName": {
     "message": "纯净起始页",
     "description": "扩展名称"
@@ -35,12 +35,20 @@
     "message": "Yandex 搜索或输入网址",
     "description": "搜索框占位符文本"
   },
-  "searchEngineLabel": {
-    "message": "搜索引擎",
-    "description": "Label for search engine selector"
-  },
-  "saveSettingsButton": {
-    "message": "保存设置",
-    "description": "Settings save button text"
-  }
+    "searchEngineLabel": {
+      "message": "搜索引擎",
+      "description": "搜索引擎选择器标签"
+    },
+    "saveSettingsButton": {
+      "message": "保存设置",
+      "description": "设置保存按钮文本"
+    },
+    "backgroundImageLabel": {
+      "message": "背景图片",
+      "description": "背景图片上传标签"
+    },
+    "resetBackgroundButton": {
+      "message": "重置背景",
+      "description": "重置背景按钮"
+    }
 }

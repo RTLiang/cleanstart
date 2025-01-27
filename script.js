@@ -212,3 +212,33 @@ document.addEventListener('paste', (e) => {
         e.preventDefault();
     }
 });
+
+// Background image handling
+document.getElementById('bgUpload').addEventListener('change', function(e) {
+    const file = e.target.files[0];
+    const reader = new FileReader();
+    
+    reader.onload = function(e) {
+        chrome.storage.local.set({ background: e.target.result }, () => {
+            document.body.style.backgroundImage = `url(${e.target.result})`;
+            document.body.classList.add('custom-bg');
+        });
+    };
+    
+    if (file) reader.readAsDataURL(file);
+});
+
+document.getElementById('resetBackground').addEventListener('click', () => {
+    chrome.storage.local.remove('background', () => {
+        document.body.style.backgroundImage = '';
+        document.body.classList.remove('custom-bg');
+    });
+});
+
+// Load saved background
+chrome.storage.local.get(['background'], function(result) {
+    if (result.background) {
+        document.body.style.backgroundImage = `url(${result.background})`;
+        document.body.classList.add('custom-bg');
+    }
+});

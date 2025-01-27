@@ -1,4 +1,4 @@
-﻿{
+{
   "extName": {
     "message": "純淨起始頁",
     "description": "擴展名稱"
@@ -35,12 +35,20 @@
     "message": "Yandex 搜尋或輸入網址",
     "description": "搜尋框佔位符文字"
   },
-  "searchEngineLabel": {
-    "message": "搜尋引擎",
-    "description": "Label for search engine selector"
-  },
-  "saveSettingsButton": {
-    "message": "儲存設定",
-    "description": "Settings save button text"
-  }
+    "searchEngineLabel": {
+      "message": "搜尋引擎",
+      "description": "搜尋引擎選擇器標籤"
+    },
+    "saveSettingsButton": {
+      "message": "儲存設定",
+      "description": "設定儲存按鈕文字"
+    },
+    "backgroundImageLabel": {
+      "message": "背景圖片",
+      "description": "背景圖片上傳標籤"
+    },
+    "resetBackgroundButton": {
+      "message": "重設背景",
+      "description": "重設背景按鈕"
+    }
 }

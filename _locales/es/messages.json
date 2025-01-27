@@ -42,5 +42,13 @@
     "saveSettingsButton": {
         "message": "Guardar",
         "description": "Texto del botón de guardar configuración"
+    },
+    "backgroundImageLabel": {
+        "message": "Imagen de Fondo",
+        "description": "Etiqueta para la carga de imágenes de fondo"
+    },
+    "resetBackgroundButton": {
+        "message": "Restablecer Fondo",
+        "description": "Botón para restablecer el fondo"
     }
 }

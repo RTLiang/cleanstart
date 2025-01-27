@@ -1,46 +1,54 @@
 {
   "extName": {
-    "message": "Clean Start",
-    "description": "Extension name"
+    "message": "Inizio Pulito",
+    "description": "Nome dell'estensione"
   },
   "extDesc": {
     "message": "Un sostituto leggero per la nuova scheda del browser che offre un'esperienza di accesso rapido e senza distrazioni.",
-    "description": "Extension description"
+    "description": "Descrizione dell'estensione"
   },
   "searchGooglePlaceholder": {
     "message": "Cerca su Google o digita un URL",
-    "description": "Search input placeholder text"
+    "description": "Testo segnaposto per la ricerca"
   },
   "searchBingPlaceholder": {
     "message": "Cerca su Bing o digita un URL",
-    "description": "Search input placeholder text"
+    "description": "Testo segnaposto per la ricerca"
   },
   "searchPerplexityPlaceholder": {
     "message": "Cerca su Perplexity o digita un URL",
-    "description": "Search input placeholder text"
+    "description": "Testo segnaposto per la ricerca"
   },
   "searchChatgptPlaceholder": {
     "message": "Cerca su ChatGPT o digita un URL",
-    "description": "Search input placeholder text"
+    "description": "Testo segnaposto per la ricerca"
   },
   "searchBaiduPlaceholder": {
     "message": "Cerca su Baidu o digita un URL",
-    "description": "Search input placeholder text"
+    "description": "Testo segnaposto per la ricerca"
   },
   "searchDuckduckgoPlaceholder": {
     "message": "Cerca su DuckDuckGo o digita un URL",
-    "description": "Search input placeholder text"
+    "description": "Testo segnaposto per la ricerca"
   },
   "searchYandexPlaceholder": {
     "message": "Cerca su Yandex o digita un URL",
-    "description": "Search input placeholder text"
+    "description": "Testo segnaposto per la ricerca"
   },
   "searchEngineLabel": {
     "message": "Motore di ricerca",
-    "description": "Label for search engine selector"
+    "description": "Etichetta per il selettore del motore di ricerca"
   },
   "saveSettingsButton": {
     "message": "Salva",
-    "description": "Settings save button text"
-  }
+    "description": "Testo del pulsante per salvare le impostazioni"
+  },
+    "backgroundImageLabel": {
+      "message": "Immagine di sfondo",
+      "description": "Etichetta per il caricamento dell'immagine di sfondo"
+    },
+    "resetBackgroundButton": {
+      "message": "Ripristina sfondo",
+      "description": "Pulsante per ripristinare lo sfondo"
+    }
 }

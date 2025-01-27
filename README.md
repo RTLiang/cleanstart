@@ -10,6 +10,7 @@ This Chrome extension provides a clean and intelligent search experience, featur
 - Search engine selector in settings panel
 - Advanced URL detection in search bar
 - Optimized dark mode for all search engine logos and interfaces
+- Fully customizable background image and reset functionality
 
 ## KNOWN ISSUES
 
@@ -28,4 +29,3 @@ This Chrome extension provides a clean and intelligent search experience, featur
 
 
 ## FUTURE FEATURES
-- Customizable background image

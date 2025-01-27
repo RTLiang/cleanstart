@@ -1,46 +1,54 @@
 {
   "extName": {
     "message": "Neustart",
-    "description": "Extension name"
+    "description": "Erweiterungsname"
   },
   "extDesc": {
     "message": "Eine schlanke Browser-Registerkarten-Ersetzung, die ein ablenkungsfreies Schnellerlebnis bietet.",
-    "description": "Extension description"
+    "description": "Erweiterungsbeschreibung"
   },
   "searchGooglePlaceholder": {
     "message": "Google suchen oder URL eingeben",
-    "description": "Search input placeholder text"
+    "description": "Platzhaltertext für die Sucheingabe"
   },
   "searchBingPlaceholder": {
     "message": "Bing suchen oder URL eingeben",
-    "description": "Search input placeholder text"
+    "description": "Platzhaltertext für die Sucheingabe"
   },
   "searchPerplexityPlaceholder": {
     "message": "Perplexity suchen oder URL eingeben",
-    "description": "Search input placeholder text"
+    "description": "Platzhaltertext für die Sucheingabe"
   },
   "searchChatgptPlaceholder": {
     "message": "ChatGPT suchen oder URL eingeben",
-    "description": "Search input placeholder text"
+    "description": "Platzhaltertext für die Sucheingabe"
   },
   "searchBaiduPlaceholder": {
     "message": "Baidu suchen oder URL eingeben",
-    "description": "Search input placeholder text"
+    "description": "Platzhaltertext für die Sucheingabe"
   },
   "searchDuckduckgoPlaceholder": {
     "message": "DuckDuckGo suchen oder URL eingeben",
-    "description": "Search input placeholder text"
+    "description": "Platzhaltertext für die Sucheingabe"
   },
   "searchYandexPlaceholder": {
     "message": "Yandex suchen oder URL eingeben",
-    "description": "Search input placeholder text"
+    "description": "Platzhaltertext für die Sucheingabe"
   },
   "searchEngineLabel": {
     "message": "Suchmaschine",
-    "description": "Label for search engine selector"
+    "description": "Beschriftung für die Suchmaschinenauswahl"
   },
   "saveSettingsButton": {
     "message": "Speichern",
-    "description": "Settings save button text"
+    "description": "Text der Schaltfläche zum Speichern der Einstellungen"
+  },
+  "backgroundImageLabel": {
+    "message": "Hintergrundbild",
+    "description": "Beschriftung für den Hintergrundbild-Upload"
+  },
+  "resetBackgroundButton": {
+    "message": "Hintergrund zurücksetzen",
+    "description": "Schaltfläche zum Zurücksetzen des Hintergrunds"
   }
 }
