@@ -11,9 +11,19 @@ This Chrome extension provides a clean and intelligent search experience, featur
 - Advanced URL detection in search bar
 - Optimized dark mode for all search engine logos and interfaces
 - Fully customizable background image and reset functionality
+- Browser history-based search suggestions and auto-complete
+- Browser history-based search suggestions for faster and smarter searching
 
 ## KNOWN ISSUES
+1. 
+```
+google ai stu
+google ai s
+leads different results
+```
 
+2. 
+Chinese character handling
 
 ## Supported Languages
 - English (en)
@@ -29,5 +39,4 @@ This Chrome extension provides a clean and intelligent search experience, featur
 
 
 ## FUTURE FEATURES
-- broswer history auto complete
-- auto predict search key
+

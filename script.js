@@ -57,18 +57,20 @@ function updateInputStyle(query) {
 }
 
 searchInput.addEventListener('input', async function (e) {
-    const query = e.target.value.trim();
+    const query = e.target.value.trim().normalize('NFC');
     updateInputStyle(query);
-    console.log('Current input:', query);
     
-    if(query.length > 2) {
+    if (query.length > 2) {
         const suggestions = await getHistorySuggestions(query);
         showSuggestions(suggestions);
+        if (suggestions.length === 0) {
+            searchInput.classList.remove('bold-input');
+        }
     } else {
         clearSuggestions();
+        searchInput.classList.remove('bold-input');
     }
 });
-
 searchInput.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
         e.preventDefault();
@@ -148,17 +150,11 @@ document.getElementById('searchInput').addEventListener('keydown', (e) => {
 });
 
 document.addEventListener('click', (e) => {
-    const searchEngineSelect = document.getElementById('searchEngine');
-    const saveButton = document.getElementById('saveSettings');
+    const searchBox = document.querySelector('.search-box');
+    const suggestionsContainer = document.getElementById('suggestionsContainer');
     
-    // Check if the click is not on the search input, search engine select, or save button
-    if (!searchInput.contains(e.target) && 
-        !searchEngineSelect.contains(e.target) && 
-        !saveButton.contains(e.target)) {
-        // Focus on the search bar only if IME is not composing
-        if (!searchInput.isComposing) {
-            searchInput.focus();
-        }
+    if (!searchBox.contains(e.target) && !suggestionsContainer.contains(e.target)) {
+        clearSuggestions();
     }
 });
 
@@ -194,6 +190,11 @@ function showSuggestions(suggestions) {
     const container = document.getElementById('suggestionsContainer');
     container.innerHTML = '';
     
+    if (suggestions.length === 0) {
+        container.style.display = 'none';
+        return;
+    }
+    
     suggestions.forEach(item => {
         const div = document.createElement('div');
         div.className = 'suggestion-item';
@@ -209,11 +210,13 @@ function showSuggestions(suggestions) {
         container.appendChild(div);
     });
     
-    container.style.display = suggestions.length ? 'block' : 'none';
+    container.style.display = 'block';
 }
 
 function clearSuggestions() {
-    document.getElementById('suggestionsContainer').style.display = 'none';
+    const container = document.getElementById('suggestionsContainer');
+    container.style.display = 'none';
+    searchInput.classList.remove('bold-input');
 }
 // Call this when DOM loads
 document.addEventListener('DOMContentLoaded', () => {
@@ -243,6 +246,84 @@ document.addEventListener('paste', (e) => {
         // Prevent default paste behavior
         e.preventDefault();
     }
+});
+
+document.addEventListener('keydown', (e) => {
+    const suggestions = document.querySelectorAll('.suggestion-item');
+    const activeSuggestion = document.querySelector('.suggestion-item.active');
+    let index = Array.from(suggestions).indexOf(activeSuggestion);
+
+    if (e.ctrlKey && e.key === 'Enter') {
+        e.preventDefault();
+        searchInput.classList.add('force-search');
+        const query = searchInput.value.trim();
+        updateSearchEngine(query);
+        return;
+    }
+    
+    // Handle arrow navigation
+    if (suggestions.length > 0) {
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            index = (index + 1) % suggestions.length;
+            setActiveSuggestion(suggestions, index);
+            searchInput.classList.remove('bold-input');
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            if (index === 0) {
+                // Move focus back to search bar
+                searchInput.focus();
+                searchInput.classList.add('bold-input');
+                clearActiveSuggestions();
+            } else {
+                index = (index - 1 + suggestions.length) % suggestions.length;
+                setActiveSuggestion(suggestions, index);
+                searchInput.classList.remove('bold-input');
+            }
+        } else if (e.key === 'Enter' && activeSuggestion) {
+            e.preventDefault();
+            activeSuggestion.click();
+        }
+    }
+});
+
+searchInput.addEventListener('blur', () => {
+    searchInput.classList.remove('force-search');
+});
+
+function setActiveSuggestion(suggestions, index) {
+    suggestions.forEach(s => s.classList.remove('active'));
+    const active = suggestions[index];
+    if (active) {
+        active.classList.add('active');
+        active.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    }
+}
+
+function clearActiveSuggestions() {
+    const active = document.querySelector('.suggestion-item.active');
+    if (active) {
+        active.classList.remove('active');
+    }
+}
+
+searchInput.addEventListener('focus', async () => {
+    const query = searchInput.value.trim();
+    if (query.length > 2) {
+        const suggestions = await getHistorySuggestions(query);
+        if (suggestions.length > 0) {
+            showSuggestions(suggestions);
+            searchInput.classList.add('bold-input');
+        } else {
+            searchInput.classList.remove('bold-input');
+        }
+    } else {
+        searchInput.classList.remove('bold-input');
+    }
+});
+
+searchInput.addEventListener('blur', () => {
+    searchInput.classList.remove('bold-input');
 });
 
 // Background image handling
@@ -283,17 +364,46 @@ async function getHistorySuggestions(query) {
     const historyItems = await new Promise(resolve => {
         chrome.history.search({
             text: query,
-            maxResults: MAX_SUGGESTIONS,
-            startTime: Date.now() - 2592000000 // 30 days
+            maxResults: 50, // Fetch more items
+            startTime: Date.now() - 2592000000
         }, resolve);
     });
-    return historyItems.filter(item => item.url !== window.location.href);
+
+    const uniqueItems = [];
+    const seenCombos = new Set();
+    const lowerCaseQuery = query.toLowerCase();
+    
+    for (const item of historyItems) {
+        try {
+            if (item.title.toLowerCase().includes(lowerCaseQuery) || item.url.toLowerCase().includes(lowerCaseQuery)) {
+                const hostname = new URL(item.url).hostname;
+                const comboKey = `${hostname}|${item.title.trim().toLowerCase().normalize('NFC')}`;
+                
+                if (!seenCombos.has(comboKey) && 
+                    item.url !== window.location.href &&
+                    uniqueItems.length < MAX_SUGGESTIONS) {
+                    
+                    seenCombos.add(comboKey);
+                    uniqueItems.push(item);
+                }
+            }
+        } catch {
+            // Skip invalid URLs
+        }
+    }
+    
+    return uniqueItems;
 }
 
 // Suggestions handling
 function showSuggestions(suggestions) {
     const container = document.getElementById('suggestionsContainer');
     container.innerHTML = '';
+    
+    if (suggestions.length === 0) {
+        container.style.display = 'none';
+        return;
+    }
     
     suggestions.forEach(item => {
         const div = document.createElement('div');
@@ -310,7 +420,7 @@ function showSuggestions(suggestions) {
         container.appendChild(div);
     });
     
-    container.style.display = suggestions.length ? 'block' : 'none';
+    container.style.display = 'block';
 }
 
 function clearSuggestions() {

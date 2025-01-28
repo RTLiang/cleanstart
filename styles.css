@@ -124,7 +124,7 @@ input::-webkit-contacts-auto-fill-button {
 .suggestions-container {
     width: 100%;
     max-width: 600px;
-    background: var(--input-bg, #fff); /* Match search bar background */
+    background-color: var(--input-bg, #fff); /* Match search bar background */
     border: 1px solid var(--border-color, #dfe1e5);
     border-radius: 8px;
     margin-top: -1px;
@@ -132,13 +132,13 @@ input::-webkit-contacts-auto-fill-button {
     position: absolute;
     top: 100%;
     z-index: 100;
-    backdrop-filter: blur(4px); /* Add subtle blur for better contrast */
+    backdrop-filter: none; /* Remove blur effect */
 }
 
 .suggestion-item {
     padding: 12px 16px;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: all 0.2s ease;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -165,6 +165,16 @@ input::-webkit-contacts-auto-fill-button {
     opacity: 0.8;
 }
 
+.suggestion-item.active {
+    background: var(--hover-bg);
+    transform: translateX(-6px);
+    font-weight: bold;
+}
+
+.suggestion-item.active .suggestion-title {
+    font-weight: bold;
+    color: var(--accent-color);
+}
 
 /* Dark mode styles */
 @media (prefers-color-scheme: dark) {
@@ -186,8 +196,8 @@ input::-webkit-contacts-auto-fill-button {
     } 
     */
     .suggestions-container {
-        background-color: #3c3c3c;
-        border-color: #5f6368;
+        background-color: var(--input-bg, #303134); /* Match dark mode search bar */
+        border-color: var(--border-color, #5f6368);
     }
 
     .suggestion-item {
@@ -237,4 +247,8 @@ input::-webkit-contacts-auto-fill-button {
         color: #e8eaed;
         margin-right: 10px;
     }
+}
+
+.bold-input {
+    font-weight: bold !important;
 }
