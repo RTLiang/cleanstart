@@ -1,5 +1,12 @@
 # Clean Start Extension Changelog
 
+## Version 1.3.1
+### Release Date: 28 JAN 2025
+
+### New Features
+- Added Perplexity as a new search engine option
+
+
 ## Version 1.3
 ### Release Date: 28 JAN 2025
 

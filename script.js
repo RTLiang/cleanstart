@@ -108,7 +108,7 @@ const SEARCH_ENGINES = {
     chatgpt: query => `https://chatgpt.com?q=${encodeURIComponent(query)}`,
     baidu: query => `https://www.baidu.com/s?wd=${encodeURIComponent(query)}`,
     duckduckgo: query => `https://duckduckgo.com/?q=${encodeURIComponent(query)}`,
-    yandex: query => `https://yandex.com/search/?text=${encodeURIComponent(query)}`
+    yandex: query => `https://yandex.com/search/?text=${encodeURIComponent(query)}`,
 };
 
 let currentEngine = 'google';
