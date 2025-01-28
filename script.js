@@ -56,10 +56,17 @@ function updateInputStyle(query) {
     searchInput.classList.toggle('valid-url', isUrl(query));
 }
 
-searchInput.addEventListener('input', function (e) {
+searchInput.addEventListener('input', async function (e) {
     const query = e.target.value.trim();
     updateInputStyle(query);
     console.log('Current input:', query);
+    
+    if(query.length > 2) {
+        const suggestions = await getHistorySuggestions(query);
+        showSuggestions(suggestions);
+    } else {
+        clearSuggestions();
+    }
 });
 
 searchInput.addEventListener('keydown', (e) => {
@@ -182,7 +189,32 @@ function initInternationalization() {
         el.textContent = chrome.i18n.getMessage(msgKey);
     });
 }
+// Suggestions handling
+function showSuggestions(suggestions) {
+    const container = document.getElementById('suggestionsContainer');
+    container.innerHTML = '';
+    
+    suggestions.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'suggestion-item';
+        div.innerHTML = `
+            <span class="suggestion-title">${item.title}</span>
+            <span class="suggestion-url">${new URL(item.url).hostname}</span>
+        `;
+        
+        div.addEventListener('click', () => {
+            window.location.href = item.url;
+        });
+        
+        container.appendChild(div);
+    });
+    
+    container.style.display = suggestions.length ? 'block' : 'none';
+}
 
+function clearSuggestions() {
+    document.getElementById('suggestionsContainer').style.display = 'none';
+}
 // Call this when DOM loads
 document.addEventListener('DOMContentLoaded', () => {
     initInternationalization();
@@ -242,3 +274,45 @@ chrome.storage.local.get(['background'], function(result) {
         document.body.classList.add('custom-bg');
     }
 });
+
+// Browser history suggestions
+const MAX_SUGGESTIONS = 5;
+let lastSearchTerm = '';
+
+async function getHistorySuggestions(query) {
+    const historyItems = await new Promise(resolve => {
+        chrome.history.search({
+            text: query,
+            maxResults: MAX_SUGGESTIONS,
+            startTime: Date.now() - 2592000000 // 30 days
+        }, resolve);
+    });
+    return historyItems.filter(item => item.url !== window.location.href);
+}
+
+// Suggestions handling
+function showSuggestions(suggestions) {
+    const container = document.getElementById('suggestionsContainer');
+    container.innerHTML = '';
+    
+    suggestions.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'suggestion-item';
+        div.innerHTML = `
+            <span class="suggestion-title">${item.title}</span>
+            <span class="suggestion-url">${new URL(item.url).hostname}</span>
+        `;
+        
+        div.addEventListener('click', () => {
+            window.location.href = item.url;
+        });
+        
+        container.appendChild(div);
+    });
+    
+    container.style.display = suggestions.length ? 'block' : 'none';
+}
+
+function clearSuggestions() {
+    document.getElementById('suggestionsContainer').style.display = 'none';
+}

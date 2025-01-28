@@ -88,6 +88,7 @@ input::-webkit-contacts-auto-fill-button {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure panel is on top */
 }
 
 .settings-panel select,
@@ -118,6 +119,50 @@ input::-webkit-contacts-auto-fill-button {
 /* 强制搜索状态 */
 .force-search {
     box-shadow: 0 0 0 2px #fbbc04 !important;
+}
+
+.suggestions-container {
+    width: 100%;
+    max-width: 600px;
+    background: var(--input-bg, #fff); /* Match search bar background */
+    border: 1px solid var(--border-color, #dfe1e5);
+    border-radius: 8px;
+    margin-top: -1px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 100%;
+    z-index: 100;
+    backdrop-filter: blur(4px); /* Add subtle blur for better contrast */
+}
+
+.suggestion-item {
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover {
+    background: var(--hover-bg);
+}
+
+.suggestion-title {
+    display: block;
+    font-weight: 500;
+    color: var(--text-primary);
+    font-size: 0.95em;
+}
+
+.suggestion-url {
+    font-size: 0.8em;
+    color: var(--text-secondary);
+    display: block;
+    margin-top: 2px;
+    opacity: 0.8;
 }
 
 

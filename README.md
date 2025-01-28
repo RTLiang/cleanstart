@@ -29,3 +29,5 @@ This Chrome extension provides a clean and intelligent search experience, featur
 
 
 ## FUTURE FEATURES
+- broswer history auto complete
+- auto predict search key
