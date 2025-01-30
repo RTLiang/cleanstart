@@ -261,22 +261,33 @@ document.addEventListener('keydown', (e) => {
         return;
     }
     
-    // Handle arrow navigation
     if (suggestions.length > 0) {
         if (e.key === 'ArrowDown') {
             e.preventDefault();
-            index = (index + 1) % suggestions.length;
-            setActiveSuggestion(suggestions, index);
-            searchInput.classList.remove('bold-input');
+            if (index === suggestions.length - 1) {
+                // Move focus to search input
+                searchInput.focus();
+                searchInput.classList.add('bold-input');
+                clearActiveSuggestions();
+            } else {
+                index = index === -1 ? 0 : index + 1;
+                setActiveSuggestion(suggestions, index);
+                searchInput.classList.remove('bold-input');
+            }
         } else if (e.key === 'ArrowUp') {
             e.preventDefault();
-            if (index === 0) {
+            if (index === -1) {
+                // Select last suggestion when coming from search input
+                index = suggestions.length - 1;
+                setActiveSuggestion(suggestions, index);
+                searchInput.classList.remove('bold-input');
+            } else if (index === 0) {
                 // Move focus back to search bar
                 searchInput.focus();
                 searchInput.classList.add('bold-input');
                 clearActiveSuggestions();
             } else {
-                index = (index - 1 + suggestions.length) % suggestions.length;
+                index = index - 1;
                 setActiveSuggestion(suggestions, index);
                 searchInput.classList.remove('bold-input');
             }
@@ -299,6 +310,7 @@ function setActiveSuggestion(suggestions, index) {
         active.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
     }
 }
+
 
 function clearActiveSuggestions() {
     const active = document.querySelector('.suggestion-item.active');
