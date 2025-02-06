@@ -4,7 +4,7 @@
 
 [![Download on Edge Add-ons](https://img.shields.io/badge/Download-Edge_Add--ons-blue?style=for-the-badge&logo=microsoft-edge)](https://microsoftedge.microsoft.com/addons/detail/clean-start/gggdbfblbobnadcknjlfpebheiebcccm)
 
-[![User Guide on Notion](https://img.shields.io/badge/User_Guide-Notion-black?style=for-the-badge&logo=notion)](https://www.notion.so/liangrt/Clean-Start-User-Guide-1862e1e0025d8079a1f0cd702c973903)
+[![User Guide on Notion](https://img.shields.io/badge/User_Guide-Notion-black?style=for-the-badge&logo=notion)](https://liangrt.notion.site/Clean-Start-User-Guide-1862e1e0025d8079a1f0cd702c973903?pvs=74)
 
 This Chrome extension provides a clean and intelligent search experience, featuring:
 
