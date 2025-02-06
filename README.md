@@ -1,6 +1,11 @@
 # Clean Start Extension
 
 **Author: Raydon Liang**
+
+[![Download on Edge Add-ons](https://img.shields.io/badge/Download-Edge_Add--ons-blue?style=for-the-badge&logo=microsoft-edge)](https://microsoftedge.microsoft.com/addons/detail/clean-start/gggdbfblbobnadcknjlfpebheiebcccm)
+
+[![User Guide on Notion](https://img.shields.io/badge/User_Guide-Notion-black?style=for-the-badge&logo=notion)](https://www.notion.so/liangrt/Clean-Start-User-Guide-1862e1e0025d8079a1f0cd702c973903)
+
 This Chrome extension provides a clean and intelligent search experience, featuring:
 
 - Intuitive search bar auto-focus when clicking anywhere on the page
@@ -14,16 +19,17 @@ This Chrome extension provides a clean and intelligent search experience, featur
 - Browser history-based search suggestions and auto-complete
 - Browser history-based search suggestions for faster and smarter searching
 
-## KNOWN ISSUES
-1. 
-```
-google ai stu
-google ai s
-leads different results
-```
 
-2. 
-Chinese character handling
+
+
+## KNOWN ISSUES
+1. Search result inconsistency observed when using partial queries:
+   ```
+   "google ai stu" vs "google ai s"
+   ```
+   These similar queries sometimes return different results.
+
+2. Chinese Input Method Editor (IME) integration needs improvement for smoother character input.
 
 ## Supported Languages
 - English (en)
